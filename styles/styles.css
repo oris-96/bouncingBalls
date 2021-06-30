@@ -1,0 +1,140 @@
+:root {
+  --size: 100px;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(90deg,#732fdf,#bd00ff);
+}
+
+.row{
+    display: flex;
+    justify-content: space-around;
+    background: crimson;
+    width: 100%;
+}
+
+.win-or-lose{
+    align-self: flex-start;
+}
+
+.balls{
+    margin: 0 auto;
+    background: black;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    background: radial-gradient(circle at 100px 100px, #5cabff, #000);
+    
+}
+
+.balls1{
+    margin: 0 auto;
+    background: black;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    background: radial-gradient(circle at 100px 100px,white, #000);
+    
+}
+
+.balls2{
+    margin: 0 auto;
+    background: black;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    background: radial-gradient(circle at 100px 100px,red, #000);
+    
+}
+
+.balls3{
+    margin: 0 auto;
+    background: black;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    background: radial-gradient(circle at 100px 100px,orange, #000);
+    
+}
+
+
+div {
+  width: var(--size);
+  height: var(--size);
+}
+
+.x {
+  animation: x 3s linear infinite alternate;
+}
+
+.y {
+  animation: y 5s linear infinite alternate;
+}
+
+@keyframes x {
+  100% {
+    transform: translateX( calc(100vw - var(--size)) );
+  }
+}
+
+@keyframes y {
+  100% {
+    transform: translateY( calc(100vh - var(--size)) );
+  }
+}
+
+.ballx1 {
+  animation: x 1s linear infinite alternate;
+}
+
+.bally1 {
+  animation: y 4s linear infinite alternate;
+}
+
+@keyframes x {
+  100% {
+    transform: translateX( calc(100vw - var(--size)) );
+  }
+}
+
+@keyframes y {
+  100% {
+    transform: translateY( calc(100vh - var(--size)) );
+  }
+}
+
+.ballx2 {
+  animation: x 7s linear infinite alternate;
+  
+}
+
+.bally2 {
+  animation: y 10s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes x {
+  100% {
+    transform: translateX( calc(100vw - var(--size)) );
+  }
+}
+
+@keyframes y {
+  100% {
+    transform: translateY( calc(100vh - var(--size)) );
+  }
+}
+
+@keyframes y {
+  100% {
+    transform: translateY( calc(70vh - var(--size)) );
+  }
+}
+
+.ballx3 {
+  animation: x 9s linear infinite alternate;
+}
+
+.bally3 {
+  animation: y 7s linear infinite alternate;
+}

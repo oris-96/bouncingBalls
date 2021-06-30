@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/timer.jquery/0.7.0/timer.jquery.js"></script>
+    <script defer src="./js/script.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"crossorigin="anonymous"></script> -->
+   
+    <title>Bouncing Balls</title>
+</head>
+<body>
+    <div class="row row-space">
+        <div>
+            <h1 class="row-space timer">Timer:<span id="stopwatch"></span></h1>
+            <p>
+                <input class = "start" type='button' value='player1_start' />
+                <input class = "player2" type='button' value='player2_start'  />
+                <input class = "reset1" type='button' value='Reset'  />
+            </p>
+        </div>
+        
+        <h1 class="row-space player">Current player:</h1>
+        <h1 class="row-space hits">Hits:</h1>
+        <h1 class="row-space win-or-lose">TotalHits:</h1>
+    </div>
+    <div class="x">
+        <div class="item balls y"></div>
+    </div>
+    <div class="ballx1">
+        <div class="item balls1 bally1"></div>
+    </div>
+    <div class="ballx2">
+        <div class="item balls2 bally2"></div>
+    </div>
+    <div class="ballx3">
+        <div class="item balls3 bally3"></div>
+    </div>
+</body>
+</html>
